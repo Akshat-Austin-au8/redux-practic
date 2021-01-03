@@ -2,10 +2,20 @@ import * as actions from './actionTypes';
 
 export function bugAdded(description)
 {
-    returb {
+    return {
         type: actions.BUG_ADDED,
         payload: {
-            description: "Bug1"
+            description
+        }
+    };
+}
+
+export function bugResolved(id)
+{
+    return {
+        type: actions.BUG_RESOLVED,
+        payload: {
+            id
         }
     };
 }
